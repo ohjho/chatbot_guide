@@ -8,7 +8,7 @@
 * [Chatbot Fundamentals](https://apps.worldwritable.com/tutorials/chatbot/) by [Liza Daly](https://lizadaly.com/), former CTO at Safari; it's an interactive guide with hands-on coding experience to teach some of the methods and tools useful for building a **rule-based open domain** chatbot (Brobot).
 * [Building a Simple Chatbot from Scratch in Python](https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e), uses and explains a lot of concepts in NLP like tokenization, stemming, bag-of-words, tf-idf, and cosine similarity to build a very simple **rule-based** chatbot.
 * [Writing a Google API MapBot from scratch and deploying on Facebook Messenger](https://chatbotslife.com/how-i-developed-my-own-learning-chatbot-in-python-from-scratch-and-deployed-it-on-facebook-88bc828be0a8), talks about how to use the StanfordCoreNLP, SK-Learn, MySQL, and GoogleMapsAPI and FacebookMessengerAPI to build a simple **rule-based task-orientated** chatbot. It provides a nice example on how to design dialog.
-* [Conversational AI](https://chatbotslife.com/conversational-ai-understanding-the-basics-and-a-chatbot-build-in-rasa-module-c23828307180), gives a brief history of chatbot, explains the basic concepts, compares **Dialogflow** vs **Rasa**, and an example of how to build a **task-orientated** chatbot with companion [source code](https://github.com/manikandanj2207/dataibreathe). 
+* [Conversational AI](https://chatbotslife.com/conversational-ai-understanding-the-basics-and-a-chatbot-build-in-rasa-module-c23828307180), gives a brief history of chatbot, explains the basic concepts, compares **Dialogflow** vs **Rasa**, and an example of how to build a **task-orientated** chatbot with companion [source code](https://github.com/manikandanj2207/dataibreathe).
 
 ## Libraies
 * [Dialogflow ask API.AI](https://dialogflow.com/docs/getting-started): a closed-source Google-owned API that uses NLP and Machine Learning to provide an end-to-end Chatbot model. It can easily integrate with 3rd party platforms, making deployment simple.
@@ -23,6 +23,8 @@
 
 ## Interesting Projects
 * [ELIZA](http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm?utm_source=ubisend.com&utm_medium=blog-link&utm_campaign=ubisend), the first Chatbot that started it all. Written by Weizenbaum ina 200 lines of code back in 1966.
+* [Awesome Chatbots](https://github.com/JStumpp/awesome-chatbots)
+* [Awesome Chatbots... including Chinese ones](https://github.com/fendouai/Awesome-Chatbot)
 * [Wall Street Bot](https://github.com/TarangKhanna/Wall-Street-Bot): flask, python, API.AI
 
 ## A Very Brief Intro to Chatbots
@@ -31,7 +33,8 @@
 ![image of task-orientated chatbot](https://cdn-images-1.medium.com/max/800/1*2c7v8bwGxJbkglxGhuTiJA.jpeg)  
 
 Fits most real-world business needs and trained in a specific domain to handle a few particular tasks.  
-
+#### Open Domain
+Where the conversation can go anywhere on an infinite number of topics. [mitsuku](https://www.pandorabots.com/mitsuku/) and [DeepQA](https://github.com/AbdelrahmanRadwan/Open-Domain-ChatBot) are two examples.
 ### Rule-based vs Self learning
 #### Rule-based
 Answers are generated based on rules that it's been trained on. This type of bots can handle simple queries but fail at complex ones
