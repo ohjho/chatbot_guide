@@ -5,20 +5,49 @@
 ![tested-on-osx](https://img.shields.io/badge/Tested%20on-OSX-lightgrey.svg)
 
 ## Readings
-* [A simple bot using NLTK](https://apps.worldwritable.com/tutorials/chatbot/)
-* [A bot using NLTK and SK-Learn](https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e)
+* [Chatbot Fundamentals](https://apps.worldwritable.com/tutorials/chatbot/) by [Liza Daly](https://lizadaly.com/), former CTO at Safari; it's an interactive guide with hands-on coding experience to teach some of the methods and tools useful for building a **rule-based open domain** chatbot (Brobot).
+* [Building a Simple Chatbot from Scratch in Python](https://medium.com/analytics-vidhya/building-a-simple-chatbot-in-python-using-nltk-7c8c8215ac6e), uses and explains a lot of concepts in NLP like tokenization, stemming, bag-of-words, tf-idf, and cosine similarity to build a very simple **rule-based** chatbot.
 * [Tutorial on a MapBot using StanfordCoreNLP, SK-Learn, and Facebook Messenger](https://chatbotslife.com/how-i-developed-my-own-learning-chatbot-in-python-from-scratch-and-deployed-it-on-facebook-88bc828be0a8)
 * [Building a chatbot using API.AI, slack, and Heroku](https://moz.com/blog/chat-bot)
 * [Building a chatbot using Rasa NLU](https://chatbotslife.com/conversational-ai-understanding-the-basics-and-a-chatbot-build-in-rasa-module-c23828307180)
 * [Tutorial on a ML Chatbot in Python using Rasa](https://hackernoon.com/build-simple-chatbot-with-rasa-part-1-f4c6d5bb1aea)
 
 ## Libraies
-* [API.AI/ Dialogflow](https://dialogflow.com/docs/getting-started)
-* [NLU](https://rasa.com/docs/nlu/)
-* [ChatterBot](https://github.com/gunthercox/ChatterBot)
+* [Dialogflow ask API.AI](https://dialogflow.com/docs/getting-started): a closed-source Google-owned API that uses NLP and Machine Learning to provide an end-to-end Chatbot model. It can easily integrate with 3rd party platforms, making deployment simple.
+* [Rasa NLU + Core](https://rasa.com/docs/nlu/): an open-source library. The NLU module provides NLP tools for **intent classification** and **entity extraction**. While the Core module handles **dialogures** and **fulfillment**.
+  * Nahid Alam wrote a [great tutorial](https://towardsdatascience.com/a-chatbot-from-future-building-an-end-to-end-conversational-assistant-with-rasa-ai-51a1c93dabf2) on Towards Data Science on how to use Rasa.
+* [ChatterBot](https://github.com/gunthercox/ChatterBot): an open-source python library that uses a selection of machine learning algo to produce different types of responses
+  * Ruan Bekker wrote a [simple tutorial](https://blog.ruanbekker.com/blog/2017/12/13/create-a-chatbot-with-chatterbot-on-python/) on how to quickly build a chatbot using Chatterbot.
+* [TextBlob](https://textblob.readthedocs.io/en/dev/): an API for diving into common NLP tasks (e.g. POS tagging, noun phrase extraction, sentiment analysis, classification, translation, etc.)
+* [spaCy](https://spacy.io/): another NLP API built in CPython that excels at large-scale information extraction, aka Speed.
 
 ## Interesting Projects
+* [ELIZA](http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm?utm_source=ubisend.com&utm_medium=blog-link&utm_campaign=ubisend), the first Chatbot that started it all. Written by Weizenbaum ina 200 lines of code back in 1966.
 * [Wall Street Bot](https://github.com/TarangKhanna/Wall-Street-Bot): flask, python, API.AI
+
+## Quick Overview of how Chatbots work
+### Rule-based vs Self learning
+#### Rule-based
+Answers are generated based on rules that it's been trained on. This type of bots can handle simple queries but fail at complex ones
+#### Self-learning
+uses Machine Learning approach that's more efficient than rule-based and are of two types
+##### Retrieval Based vs Generative
+* **Retrieval**: using **heuristic** to select a response from a library of predefined responses
+* **Generative**: bots generate original answers
+
+### Recurrent Neural Network (RNN)
+![image of RNN](http://complx.me/img/seq2seq/lstm.png)
+Context is important in language, which is why RNN, networks with embedded loops that allow pass information to persist, is a good match for training Chatbots.
+
+Siraj, the Youtube Star, explained how to use TensorFlow to build an RNN based Chatbot in [this video](https://www.youtube.com/watch?v=SJDEOWLHYVo&index=66&list=WL&t=0s) with the companion [source code](https://github.com/llSourcell/tensorflow_chatbot).
+
+#### Long Short Term Memory Networks (LSTMs)
+LSTMs are a special kind of RNN that has preformed particular well because it excels at retaining long-term memory of the dialog flow. [Understanding LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs/) by Chris Olah, a Google Brain Research Scientist, talks in depth about how they work.
+
+#### Sequence to Sequence Learning (Seq2Seq)
+![image of seq2seq](http://complx.me/img/seq2seq/seq2seq2.png)
+
+Seq2Seq models consist of two RNNs: an encoder RNN and a decoder RNN. The encoder reads the input sentence and is responsbile for emitting a context. Based on the context, the decoder generates the output sequence. [This github repo](https://github.com/tensorlayer/seq2seq-chatbot) have some sample code on building a Seq2Seq chatbot.
 
 ## Portfolio
 1. A translation Chatbot
