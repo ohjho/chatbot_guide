@@ -25,18 +25,19 @@
 * [ELIZA](http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm?utm_source=ubisend.com&utm_medium=blog-link&utm_campaign=ubisend), the first Chatbot that started it all. Written by Weizenbaum ina 200 lines of code back in 1966.
 * [Wall Street Bot](https://github.com/TarangKhanna/Wall-Street-Bot): flask, python, API.AI
 
-## Quick Overview of how Chatbots work
+## A Very Brief Intro to Chatbots
 ### Rule-based vs Self learning
 #### Rule-based
 Answers are generated based on rules that it's been trained on. This type of bots can handle simple queries but fail at complex ones
 #### Self-learning
-uses Machine Learning approach that's more efficient than rule-based and are of two types
+Uses Machine Learning approach that's more efficient than rule-based and are of two types...
 ##### Retrieval Based vs Generative
 * **Retrieval**: using **heuristic** to select a response from a library of predefined responses
 * **Generative**: bots generate original answers
 
 ### Recurrent Neural Network (RNN)
-![image of RNN](http://complx.me/img/seq2seq/lstm.png)
+![image of RNN](http://complx.me/img/seq2seq/lstm.png)  
+
 Context is important in language, which is why RNN, networks with embedded loops that allow pass information to persist, is a good match for training Chatbots.
 
 Siraj, the Youtube Star, explained how to use TensorFlow to build an RNN based Chatbot in [this video](https://www.youtube.com/watch?v=SJDEOWLHYVo&index=66&list=WL&t=0s) with the companion [source code](https://github.com/llSourcell/tensorflow_chatbot).
