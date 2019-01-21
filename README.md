@@ -13,11 +13,14 @@
 ## Libraies
 * [Dialogflow ask API.AI](https://dialogflow.com/docs/getting-started): a closed-source Google-owned API that uses NLP and Machine Learning to provide an end-to-end Chatbot model. It can easily integrate with 3rd party platforms, making deployment simple.
   * [Here](https://moz.com/blog/chat-bot) is a demo on how someone used API.AI to build a food ordering chatbot on Slack.
+  * And [here](https://pusher.com/tutorials/chatbot-flask-dialogflow) someone built a movie chatbot.
 * [Rasa NLU + Core](https://rasa.com/docs/nlu/): an open-source library. The NLU module provides NLP tools for **intent classification** and **entity extraction**. While the Core module handles **dialogures** and **fulfillment**.
   * Nahid Alam wrote a [great tutorial](https://towardsdatascience.com/a-chatbot-from-future-building-an-end-to-end-conversational-assistant-with-rasa-ai-51a1c93dabf2) on Towards Data Science on how to use Rasa.
+  * Martin Novak [explained in details](https://medium.com/coinmonks/rasa-python-weather-chatbot-51fc218d346d) how he built his weather bot.
   * Nathaniel Kohn, Data Scienist at Lemonade, also have a more technical one on [building a pizza ordering chatbot](https://hackernoon.com/build-simple-chatbot-with-rasa-part-1-f4c6d5bb1aea)
 * [ChatterBot](https://github.com/gunthercox/ChatterBot): an open-source python library that uses a selection of machine learning algo to produce different types of responses
   * Ruan Bekker wrote a [simple tutorial](https://blog.ruanbekker.com/blog/2017/12/13/create-a-chatbot-with-chatterbot-on-python/) on how to quickly build a chatbot using Chatterbot.
+  * [ChatterBot + Flask Boilerplate](https://github.com/chamkank/flask-chatterbot)
 * [TextBlob](https://textblob.readthedocs.io/en/dev/): an API for diving into common NLP tasks (e.g. POS tagging, noun phrase extraction, sentiment analysis, classification, translation, etc.)
 * [spaCy](https://spacy.io/): another NLP API built in CPython that excels at large-scale information extraction, aka Speed.
 
@@ -25,6 +28,9 @@
 * [ELIZA](http://psych.fullerton.edu/mbirnbaum/psych101/Eliza.htm?utm_source=ubisend.com&utm_medium=blog-link&utm_campaign=ubisend), the first Chatbot that started it all. Written by Weizenbaum ina 200 lines of code back in 1966.
 * [Awesome Chatbots](https://github.com/JStumpp/awesome-chatbots)
 * [Awesome Chatbots... including Chinese ones](https://github.com/fendouai/Awesome-Chatbot)
+* [Awesome bots](https://github.com/invocable/awesome-bots#bot-development)
+* [Facebook Chatbot Application](https://github.com/tavik000/python-key-chatbot)
+* [Rasa Facebook Bot Example](https://github.com/souvikg10/rasa_bot_example)
 * [Wall Street Bot](https://github.com/TarangKhanna/Wall-Street-Bot): flask, python, API.AI
 
 ## A Very Brief Intro to Chatbots
